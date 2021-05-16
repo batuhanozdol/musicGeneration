@@ -1,1 +1,2 @@
 1BiLSTMAtt1GruLayer-030-0.2558.hdf5 filter=lfs diff=lfs merge=lfs -text
+1BiLSTMAtt1LSTMLayer-adam-030-0.0972.hdf5 filter=lfs diff=lfs merge=lfs -text
