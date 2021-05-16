@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LSTMBiLSTMBiLSTM Results</title>
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+
+</head>
+<body>
+    <div class="container">
+        <div id="home" class="flex-column flex-center">
+           
+            <midi-player src="/static/lstm_lstm_lstm/shorter_lstmbilstmbilstm10.mid" sound-font> </midi-player><br><br>
+            <h3> LSTM supported with two BiLSTM layers, RMSPROP optimizer is used to train 10 epochs, 64 batch size. 
+            Categorical_crossentropy is used for calculating loss and softmax is used for activation.
+            </h3> <br><br>
+
+            <midi-player src="/static/lstm_lstm_lstm/shorter_lstmbilstmbilstm20.mid" sound-font> </midi-player><br><br>
+            <h3> LSTM supported with two BiLSTM layers, RMSPROP optimizer is used to train 20 epochs, 64 batch size. 
+                Categorical_crossentropy is used for calculating loss and softmax is used for activation.
+            </h3> <br><br>
+            
+            <img src="/static/img/shorter_lstmbilstmbilstm20-1.jpg" width="600" height="600"><br><br>
+
+            <script src="https://cdn.jsdelivr.net/combine/npm/tone@14.7.58,npm/@magenta/music@1.21.0/es6/core.js,npm/focus-visible@5,npm/html-midi-player@1.1.0"></script>           
+            
+            <a href="/mozartandBeethoven" class="turku-btn">Other Results</a>
+            <a href="/results" class="red-btn" >Dataset Page</a> 
+            <a href="/" id="home-btn" class="btn">Homepage<i class="fas fa-home"></i></a>
+        </div>
+    </div>
+</body>
+</html>

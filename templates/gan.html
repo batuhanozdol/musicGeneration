@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GAN Results</title>
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+
+</head>
+<body>
+    <div class="container">
+        <div id="home2" class="flex-column flex-center">
+           
+            <midi-player src="/static/gan/gan_final_50row.mid" sound-font> </midi-player><br><br>
+            <h3> GAN is used, latent dimension is 1000, input size is 50, batch size is 32. Trained 324 epochs. 
+                Offset is 0.5, Adam optimizer is used.
+            </h3> <br><br>
+
+            <midi-player src="/static/gan/gan_final1ep32batch200latent_withduration.mid" sound-font> </midi-player><br><br>
+            <h3> GAN is used, latent dimension is 200, input size is 100, batch size is 32. Trained 1000 epochs. 
+                Offset is 0.35 which is more fast but again stable, Adam optimizer is used.
+            </h3> <br><br>
+            
+            <midi-player src="/static/gan/gan_final1ep32batch200latent.mid" sound-font> </midi-player><br><br>
+            <h3> GAN is used, latent dimension is 200, input size is 100, batch size is 32. Trained 1000 epochs. 
+                Offset depends on input note duration which is unstable, Adam optimizer is used.
+            </h3> <br><br>
+            
+            <midi-player src="/static/gan/gan_final1ep32batch1000latent_withduration.mid" sound-font> </midi-player><br><br>
+            <h3> GAN is used, latent dimension is 1000, input size is 100, batch size is 32. Trained 1000 epochs. 
+                Offset depends on input note duration which is unstable, Adam optimizer is used.
+            </h3> 
+
+            <midi-player src="/static/gan/gan_final1ep32batch1000latentwithoutduration.mid" sound-font> </midi-player><br><br>
+            <h3> GAN is used, latent dimension is 1000, input size is 100, batch size is 32. Trained 1000 epochs. 
+                Offset is 0.35 which is more fast but again stable, Adam optimizer is used.
+            </h3> <br><br>
+            
+            <midi-player src="/static/gan/gan_final500ep32batch1000latent_withduration.mid" sound-font> </midi-player><br><br>
+            <h3> GAN is used, latent dimension is 1000, input size is 100, batch size is 32. Trained 500 epochs. 
+                Offset depends on input note duration which is unstable, Adam optimizer is used. Rest notes in pattern
+                are discard when training our input data. <br>
+                Here is a discriminator and generator loss plot and the note sheet of the generated music.
+            </h3> 
+
+            <img src="/static/img/gan_final500ep32batch1000latent_withduration-1.jpg" width="600" height="600"> <br><br>
+            <img src="/static/img/GAN_Loss_per_Epoch500_withduration_latent1000_final.jpg" width="500" height="300"> <br><br>
+
+            <midi-player src="/static/gan/gan_final2000ep32batch1000latentwithoutduration.mid" sound-font> </midi-player><br><br>
+            <h3> GAN is used, latent dimension is 1000, input size is 100, batch size is 32. Trained 500 epochs. 
+                Offset is 0.35 which is more fast but again stable, Adam optimizer is used. <br>
+                Here is a discriminator and generator loss plot and the note sheet of the generated music.
+            </h3> <br><br>
+            
+            <img src="/static/img/gan_final2000ep32batch1000latentwithoutduration-1.jpg" width="600" height="600"> <br><br>
+            <img src="/static/img/GAN_Loss_2000_Epoch_final_1000latentwithoutduration.jpg" width="500" height="300"> <br><br>
+
+            <script src="https://cdn.jsdelivr.net/combine/npm/tone@14.7.58,npm/@magenta/music@1.21.0/es6/core.js,npm/focus-visible@5,npm/html-midi-player@1.1.0"></script>           
+            
+            <a href="/mozartandBeethoven" class="turku-btn">Other Results</a>
+            <a href="/results" class="red-btn" >Dataset Page</a> 
+            <a href="/" id="home-btn" class="btn">Homepage<i class="fas fa-home"></i></a>
+        </div>
+    </div>
+</body>
+</html>
