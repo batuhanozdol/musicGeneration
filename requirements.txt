@@ -155,7 +155,6 @@ tensorflow-addons==0.8.3
 tensorflow-datasets==2.1.0
 tensorflow-estimator==1.14.0
 tensorflow-gcs-config==2.1.8
-tensorflow-gpu==1.10.0
 tensorflow-hub==0.8.0
 tensorflow-metadata==0.22.1
 tensorflow-privacy==0.2.2
