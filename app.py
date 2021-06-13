@@ -476,9 +476,12 @@ def end():
         score = request.form['score']
         with connection:
             with connection.cursor() as cursor:
-                cursor.execute("INSERT INTO transactions (name, score) VALUES (%s,%s);",
+                cursor.execute("INSERT INTO transactions (name, score) VALUES (%s,%s)",
                 (name, int(score)),)
-        return render_template("highscores.html")
+        with connection.cursor() as cursor:
+            cursor.execute("Select * from transactions ORDER BY score DESC;")
+            user_scores = cursor.fetchall()
+            return render_template("highscores.html", user_scores = user_scores)
     else:
         return render_template("end.html")
 
