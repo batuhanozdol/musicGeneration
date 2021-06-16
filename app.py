@@ -134,7 +134,7 @@ def bilstm_attention(network_input, n_vocab):
     model.compile(loss='categorical_crossentropy', optimizer='rmsprop')
 
     # Load the weights to each node
-    model.load_weights('static/weights/weights-Bilstmatt-40-1.1404-bigger.hdf5')
+    model.load_weights('./static/weights/weights-Bilstmatt-40-1.1404-bigger.hdf5')
     
     return model
 
@@ -155,7 +155,7 @@ def bilstm_attention_gru(network_input, n_vocab):
     model.compile(loss='categorical_crossentropy', optimizer='rmsprop')
 
     # Load the weights to each node
-    model.load_weights('1BiLSTMAtt1GruLayer-030-0.2558.hdf5')
+    model.load_weights('./static/weights/1BiLSTMAtt1GruLayer-030-0.2558.hdf5')
     
     return model
 
@@ -197,7 +197,7 @@ def bilstm_attention_lstm(network_input, n_vocab):
     model.compile(loss='categorical_crossentropy', optimizer='adam')
 
     # Load the weights to each node
-    model.load_weights('1BiLSTMAtt1LSTMLayer-adam-030-0.0972.hdf5')
+    model.load_weights('./static/weights/1BiLSTMAtt1LSTMLayer-adam-030-0.0972.hdf5')
     
     return model
 
@@ -321,7 +321,7 @@ def gru_network(network_input, n_vocab):
     model.compile(loss='categorical_crossentropy', optimizer='adam')
 
     # Load the weights to each node
-    model.load_weights('static/weights/gru-30-0.0998-bigger.hdf5')
+    model.load_weights('./static/weights/gru-30-0.0998-bigger.hdf5')
     
     return model
 
