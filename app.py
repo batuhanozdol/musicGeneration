@@ -34,7 +34,7 @@ connection = psycopg2.connect(POSTGRESQL_URI)
 def generate_mozart(dataset, architect, note_length):
     """ Generate a piano midi file """
     #load the notes used to train the model
-    with open('static/mozart_data/notes', 'rb') as filepath:
+    with open('./static/mozart_data/notes', 'rb') as filepath:
         notes = pickle.load(filepath)
 
     # Get all pitch names
