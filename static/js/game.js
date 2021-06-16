@@ -66,7 +66,7 @@ let questions = [
         answer: 1,
     },
     {
-        question: "<audio controls><source src='../static/appass3.ogg' /></audio>",
+        question: "<audio controls><source src='../static/appass3.mp3' /></audio>",
         choice1: "Human",
         choice2: "AI",
         answer: 1,
