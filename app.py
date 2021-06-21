@@ -11,7 +11,7 @@ import numpy
 from music21 import converter, instrument, stream, note, chord
 from keras.models import Sequential
 from keras.layers import Dense, Dropout, LSTM, Activation, Bidirectional, Flatten, BatchNormalization, GRU
-#from keras.utils import np_utils
+
 from keras import utils
 from keras.callbacks import ModelCheckpoint
 from keras_self_attention import SeqSelfAttention
