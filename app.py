@@ -5,10 +5,6 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import os
 
-#import numpy as np
-#from numpy import core
-#from numpy.core import _multiarray_umath
-
 import glob
 import pickle
 import numpy
