@@ -1,5 +1,6 @@
 numpy==1.18.1
 Flask==1.0.4
+gunicorn==20.1.0
 psycopg2-binary==2.8.6
 music21==6.1.0
 pickleshare==0.7.5
