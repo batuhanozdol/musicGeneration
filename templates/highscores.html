@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>High Score Table</title>
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="static/css/highscores.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+
+</head>
+<body style="zoom: 85%;">
+    <div class="container">
+        <div id="highScores" class="flex-center flex-column" >
+            <br><br><br><br><br>
+            <h1 id="finalScore" style="background-color: rgb(28,26,26);">LeaderBoard</h1>
+            <ul id="highScoresList">
+                {% for user_score in user_scores %}
+                <li class="high-score">{{user_score[1]}} - {{user_score[2]}}</li>
+                {% endfor %}
+            </ul>
+            <a href="/" class="btn">Homepage<i class="fas fa-home"></i></a>
+        
+        </div>
+    </div>    
+</body>
+</html>
