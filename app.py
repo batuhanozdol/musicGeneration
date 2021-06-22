@@ -428,7 +428,7 @@ def lstm_bilstm_bilstm():
 def lstm_lstm_lstm():
     return render_template("lstm_lstm_lstm.html")
 
-@app.route("/mozartandBeethoven")
+@app.route("/classicalMusic")
 def mozartbeethoven():
     return render_template("mozartbeethoven.html")
 
