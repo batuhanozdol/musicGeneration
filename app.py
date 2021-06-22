@@ -446,7 +446,7 @@ def game():
 
 @app.route("/generate", methods=["GET","POST"])
 def generation():
-    #generate()
+    
     if request.method == "POST":
         architecture_mode = request.form.get('architecture')
         dataset = request.form.get('dataset')
