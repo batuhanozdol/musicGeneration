@@ -8,7 +8,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-size: 62.5%;
+    font-size: 50%;
     font-family: 'Nova Square', cursive;
 }
 
@@ -67,11 +67,16 @@ h2 {
 }
 
 #home {
-    margin-top: 1200px;
+    margin-top: 1500px;
+}
+
+#highScores {
+    margin-top: 1000px;
+    zoom: 85%;
 }
 
 #home2 {
-    margin-top: 3000px;
+    margin-top: 2550px;
 }
 
 .flex-column {
@@ -208,7 +213,7 @@ h2 {
     justify-content: center;
     align-items: center;
     max-width: 80rem;
-    margin: 0 auto;
+    margin: 100 auto;
     padding: 2rem;
 }
 
