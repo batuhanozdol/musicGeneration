@@ -27,7 +27,7 @@ POSTGRESQL_URI = "postgres://azstxybh:U-bQhxnQduXwuJIOe-X50a6bwqqiHOZh@rogue.db.
 connection = psycopg2.connect(POSTGRESQL_URI)
 
 def generate_jazz(dataset, architect, note_length):
-    """ Generate a piano midi file """
+    
 
     with open('./notes', 'rb') as filepath:
         notes = pickle.load(filepath)
