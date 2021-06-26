@@ -28,7 +28,7 @@ connection = psycopg2.connect(POSTGRESQL_URI)
 
 def generate_jazz(dataset, architect, note_length):
     """ Generate a piano midi file """
-    #load the notes used to train the model
+
     with open('./notes', 'rb') as filepath:
         notes = pickle.load(filepath)
         notes = notes[:50000]
