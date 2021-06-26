@@ -61,7 +61,7 @@ def lstm_lstm(network_in, n_vocab):
     model.add(Dense(n_vocab))
     model.add(Activation('softmax'))
     model.compile(loss='categorical_crossentropy', optimizer='adam')
-    model.load_weights('.static/2LSTM.hdf5')
+    model.load_weights('./2LSTM.hdf5')
     return model
 
 def get_inputSequences(notes, pitchnames, n_vocab):
