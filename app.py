@@ -581,9 +581,6 @@ def bilstm2jazz():
 def lstm3jazz():
     return render_template("jazz_lstm3.html")
 
-
-
-
 @app.route("/showHighScores",methods=["GET"])
 def highscore():
     with connection:
@@ -603,9 +600,7 @@ def generation():
         architecture_mode = request.form.get('architecture')
         dataset = request.form.get('dataset')
         note_number = request.form.get('notes')
-        if (architecture_mode != 'lstmlstm' | architecture_mode != 'bilstmbilstm') & dataset == 'jazz':
-            a = False
-            return render_template("generate.html", a = a)
+
         if dataset == 'mozart':
             generate_mozart(dataset, architecture_mode, int(note_number))
             a = True
